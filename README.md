@@ -1,5 +1,8 @@
-# Code for education with Python Programming (On progress)
+# BlockV1
 
+## Code for programming education with Python
+
+This is a project to make framework for children who are not familiar with programming language. And the goal of this framework is to get familiar with programming(language) and computational thinking. So this framework should make children to write their own code of their algorithm in abstract manner. As the final goal is getting familiar with programming, it is ***not*** recommended to use 'block-style' coding like 'Skretch'.
 
 ## Requirements
 You need to install module `pygame` to run this code.
@@ -64,3 +67,6 @@ For example if you want to move your box **left -> right -> down -> up** then
 action.Sequential(action.left, action.right, action.down, action.up)
 ```
 would work.
+
+## Run
+    
