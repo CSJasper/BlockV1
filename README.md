@@ -46,8 +46,16 @@ is a function to move your object `Box` left from its current position. If you w
 
 The class `Sequential` inside the class `action` is a callable class which enable us to move object `Box` with series of ordered actions
 ```python
-    @staticmethod
-    def change_color(obj: Box, color: tuple):
+    class change_color:
+```
+You can change a color of your `Box` with `change_color`. For example, the code
+> ```python
+>  actions.append(action.change_color((0, 0, 0)))
+
+
+would change the color of your `Box` to black.
+
+```python
 
     class Sequential:
 ```
