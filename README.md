@@ -17,7 +17,7 @@ or
 
 ## Versions
 
-### Ver-0.01
+### V1-0.01
 
 Complete code in `move.py` to move your blocks on screen.
 
@@ -69,4 +69,21 @@ action.Sequential(action.left, action.right, action.down, action.up)
 would work.
 
 ## Run
-    
+
+*   V1-0.01
+
+    Clone this repository and run
+    ```
+    python3 main.py
+    ```
+    Modify `move.py` to move red box.
+
+
+## New features in consideration
+
+> * Level selection system
+> * New loading module system (with click)
+> * Auto simulation system
+> * Assignment system
+> * Voice control system  
+> and so on...
