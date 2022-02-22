@@ -105,11 +105,15 @@ class action:
         idx = randint(0, len(next_moves) - 1)
         
         obj.set_tile_pos(next_moves[idx][0], next_moves[idx][1])
-    
-    
-    @staticmethod
-    def change_color(obj: Box, color: tuple):
-        obj.set_color(color)
+
+
+    class change_color:
+        def __init__(self, color: tuple):
+            self.color = color
+
+
+        def __call__(self, obj: Box):
+            obj.set_color(self.color)
 
 
     class Sequential:
