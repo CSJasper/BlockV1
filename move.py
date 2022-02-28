@@ -7,8 +7,11 @@ if __name__ != '__main__':
         ##############  WRITE YOUR CODE HERE    #############
     
     
-        for i in range(100):
-            actions.append(action.move_random)
+        for i in range(18):
+            if 0 <= i <= 2:
+                actions.append(action.move_right)
+            elif 3 <= i < 5:
+                actions.append(action.move_down)
     
     
     
