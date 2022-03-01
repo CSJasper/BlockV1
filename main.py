@@ -1,5 +1,7 @@
+from turtle import back
 import pygame
 from box import Box
+from Objects import Map
 
 import importlib
 
@@ -88,6 +90,8 @@ red_box = Box(offsets, TILE_SIZE, RED, screen, debug=True)
 actions = None
 get_actions = None
 module = None
+background = Map(TILE_POS, BLACK, 5, TILE_NUM_PER_LINE, offsets, screen)
+background.read_map('maps/sample.txt')
 
 # main event
 sb = 0
@@ -125,7 +129,9 @@ while sb == 0:
 
     screen.fill(WHITE)
     
-    draw_tile(screen, BLACK, TILE_POS, 5, TILE_NUM_PER_LINE)
+    # draw_tile(screen, BLACK, TILE_POS, 5, TILE_NUM_PER_LINE)
+    background.draw()
+    background.apply_map()
     red_box.draw()
 
     pygame.display.flip()

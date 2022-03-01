@@ -14,6 +14,7 @@ class Box:
         self.pos_y = pos_offsets[self.current_tile][1]
         self.color = color
         self.surface = surface
+        self.detect_mode = False
         
         self.debug_mode = debug
 
@@ -37,6 +38,8 @@ class Box:
     def set_color(self, color: tuple):
         self.color = color
 
+    def toggle_detect_mode(self):
+        self.detect_mode = not self.detect_mode
 
 class action:
     
